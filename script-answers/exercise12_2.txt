@@ -1,0 +1,25 @@
+Script started on 2023-05-04 19:30:50+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="226" LINES="59"]
+]0;jeemlei@DESKTOP-ULQB6EB: /mnt/c/Users/Eemeli/Documents/Yliopisto/FullStack/part12-containers-applications[01;32mjeemlei@DESKTOP-ULQB6EB[00m:[01;34m/mnt/c/Users/Eemeli/Documents/Yliopisto/FullStack/part12-containers-applications[00m$ docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kdbf6a9befcde: Pulling fs layer [1B[1A[2Kdbf6a9befcde: Downloading [>                                                  ]  311.3kB/29.53MB[1B[1A[2Kdbf6a9befcde: Downloading [========>                                          ]  4.971MB/29.53MB[1B[1A[2Kdbf6a9befcde: Downloading [=====================>                             ]  12.42MB/29.53MB[1B[1A[2Kdbf6a9befcde: Downloading [=================================>                 ]  19.79MB/29.53MB[1B[1A[2Kdbf6a9befcde: Downloading [==============================================>    ]   27.2MB/29.53MB[1B[1A[2Kdbf6a9befcde: Verifying Checksum [1B[1A[2Kdbf6a9befcde: Download complete [1B[1A[2Kdbf6a9befcde: Extracting [>                                                  ]  327.7kB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [==========>                                        ]  6.226MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [=================>                                 ]  10.16MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [==============================>                    ]  18.02MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [==========================================>        ]   24.9MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [=============================================>     ]  26.87MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [=================================================> ]  29.16MB/29.53MB[1B[1A[2Kdbf6a9befcde: Extracting [==================================================>]  29.53MB/29.53MB[1B[1A[2Kdbf6a9befcde: Pull complete [1BDigest: sha256:dfd64a3b4296d8c9b62aa3309984f8620b98d87e47492599ee20739e8eb54fbf
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@832c965a7e0d: /root@832c965a7e0d:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@832c965a7e0d: /root@832c965a7e0d:/# touc    cd usr/ss rc/app/
+[?2004l[?2004h]0;root@832c965a7e0d: /usr/src/approot@832c965a7e0d:/usr/src/app# ll
+[?2004ltotal 8
+drwxr-xr-x 2 root root 4096 May  4 16:31 [0m[01;34m.[0m/
+drwxr-xr-x 1 root root 4096 May  4 16:31 [01;34m..[0m/
+[?2004h]0;root@832c965a7e0d: /usr/src/approot@832c965a7e0d:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@832c965a7e0d: /usr/src/approot@832c965a7e0d:/usr/src/app# ll
+[?2004ltotal 8
+drwxr-xr-x 2 root root 4096 May  4 16:32 [0m[01;34m.[0m/
+drwxr-xr-x 1 root root 4096 May  4 16:31 [01;34m..[0m/
+-rw-r--r-- 1 root root    0 May  4 16:32 index.js
+[?2004h]0;root@832c965a7e0d: /usr/src/approot@832c965a7e0d:/usr/src/app# exit
+[?2004lexit
+]0;jeemlei@DESKTOP-ULQB6EB: /mnt/c/Users/Eemeli/Documents/Yliopisto/FullStack/part12-containers-applications[01;32mjeemlei@DESKTOP-ULQB6EB[00m:[01;34m/mnt/c/Users/Eemeli/Documents/Yliopisto/FullStack/part12-containers-applications[00m$ exit
+exit
+
+Script done on 2023-05-04 19:33:08+03:00 [COMMAND_EXIT_CODE="0"]
