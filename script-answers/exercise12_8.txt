@@ -1,0 +1,103 @@
+Script started on 2023-10-04 15:18:36+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="142" LINES="38"]
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ exitdocker compose -f docker-compose.dev.yml -d[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -d[A]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu -dp -d[C
+[sudo] password for jeemlei: 
+[1A[1B[0G[?25l[+] Running 0/0
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.4s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.5s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.6s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.7s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.8s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m0.9s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠿ Container todo-backend-mongo-1  [39mStarting[0m                                                                                              [34m1.0s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                                               [34m1.1s [0m
+[?25h]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS         PORTS                                         NAMES
+a3422faa4d6e   mongo     "docker-entrypoint.s…"   3 weeks ago   Up 7 seconds   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend-mongo-1
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ con[K[K[Kdocek[K[K[Kcker exec todo-backend-mongo-1 bash
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ docker exec todo-backend-mongo-1 bash[C[1@ [1@-[1@i[1@t
+[?2004hroot@a3422faa4d6e:/# mongosh -u t root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	651d58878197024b42acdf70
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.6[0m
+Using MongoDB:		7.0.1
+[1m[33mUsing Mongosh[0m:		1.10.6
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-10-04T12:18:48.948+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-10-04T12:18:50.191+00:00: Soft rlimits for open file descriptors too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         60.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the [1G[0Jtest> use the[14G[1G[0Jtest> use th[13Ge_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("64f9a7a6671feae8208a4b19"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("64f9a7a6671feae8208a4b1a"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne(
+[1G[0J... [5G{
+[1G[0J... [5G[32m"[39m[1G[0J... [5Gtext: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m,
+[1G[0J... [5Gd[36mdo[39mdone: fals[33mfalse[39m
+[1G[0J... [5G}
+[1G[0J... [5G)
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("651d5c368197024b42acdf71")
+}
+[1G[0Jthe_database> [15Gtodos[1G[0Jthe_database> todo[19G[1G[0Jthe_database> tod[18G[1G[0Jthe_database> to[17G[1G[0Jthe_database> t[16G[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("64f9a7a6671feae8208a4b19"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("64f9a7a6671feae8208a4b1a"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("651d5c368197024b42acdf71"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@a3422faa4d6e:/# exit
+[?2004lexit
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12/todo-app/todo-backend[00m$ exit
+exit
+
+Script done on 2023-10-04 15:36:57+03:00 [COMMAND_EXIT_CODE="0"]

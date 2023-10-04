@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "mongo": "sudo docker compose -f docker-compose.dev.yml up -d"
   },
   "dependencies": {
     "cors": "^2.8.5",
