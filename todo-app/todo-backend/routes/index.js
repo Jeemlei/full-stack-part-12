@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 
 router.get('/statistics', async (req, res) => {
   res.send({
-    added_todos: parseInt(await getAsync('added_todos')) ?? 0,
+    added_todos: parseInt(await getAsync('added_todos') ?? 0),
   })
 })
 

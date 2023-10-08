@@ -1,0 +1,32 @@
+Script started on 2023-10-08 16:19:16+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="142" LINES="38"]
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12[00m$ docker[K[K[K[K[K[Kcontainer ls
+[sudo] password for jeemlei: 
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                                         NAMES
+f1078628ef85   mongo     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend-mongo-1
+35e6602bf8f0   redis     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:6378->6379/tcp, :::6378->6379/tcp     todo-backend-redis-1
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12[00m$ docker exec -it todo-backend-redis-1 bash
+[?2004hroot@35e6602bf8f0:/data# [Kroot@35e6602bf8f0:/data# redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET add[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET added[0;90;49m key[0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m key[0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m key[0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m key[0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m key[0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m key[0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GETS[20C[0K127.0.0.1:6379> GETSE[21C[0K127.0.0.1:6379> GETSET[22C[0K127.0.0.1:6379> GETSET [0;90;49mkey value[0m[23C[0K127.0.0.1:6379> GETSET a[0;90;49m key value[0m[24C[0K127.0.0.1:6379> GETSET ad[0;90;49m key value[0m[25C[0K127.0.0.1:6379> GETSET add[0;90;49m key value[0m[26C[0K127.0.0.1:6379> GETSET adde[0;90;49m key value[0m[27C[0K127.0.0.1:6379> GETSET added[0;90;49m key value[0m[28C[0K127.0.0.1:6379> GETSET added_[0;90;49m key value[0m[29C[0K127.0.0.1:6379> GETSET added_t[0;90;49m key value[0m[30C[0K127.0.0.1:6379> GETSET added_to[0;90;49m key value[0m[31C[0K127.0.0.1:6379> GETSET added_tod[0;90;49m key value[0m[32C[0K127.0.0.1:6379> GETSET added_todo[0;90;49m key value[0m[33C[0K127.0.0.1:6379> GETSET added_todos[0;90;49m key value[0m[34C[0K127.0.0.1:6379> GETSET added_todos [0;90;49mvalue[0m[35C[0K127.0.0.1:6379> GETSET added_todos 9[0;90;49m value[0m[36C[0K127.0.0.1:6379> GETSET added_todos 91[0;90;49m value[0m[37C[0K127.0.0.1:6379> GETSET added_todos 9[0;90;49m value[0m[36C[0K127.0.0.1:6379> GETSET added_todos 90[0;90;49m value[0m[37C[0K127.0.0.1:6379> GETSET added_todos 900[0;90;49m value[0m[38C[0K127.0.0.1:6379> GETSET added_todos 9001[0;90;49m value[0m[39C[0K127.0.0.1:6379> GETSET added_todos 9001[39C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> GETSET added_todos 9001[0;90;49m value[0m[39C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"9002"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL a[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> DEL ad[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL add[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL adde[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> DEL added[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> DEL added_[0;90;49m key [key ...][0m[26C[0K127.0.0.1:6379> DEL added_t[0;90;49m key [key ...][0m[27C[0K127.0.0.1:6379> DEL added_to[0;90;49m key [key ...][0m[28C[0K127.0.0.1:6379> DEL added_tod[0;90;49m key [key ...][0m[29C[0K127.0.0.1:6379> DEL added_todo[0;90;49m key [key ...][0m[30C[0K127.0.0.1:6379> DEL added_todos[0;90;49m key [key ...][0m[31C[0K127.0.0.1:6379> DEL added_todos[31C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET add[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET added[0;90;49m key[0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m key[0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m key[0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m key[0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m key[0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m key[0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"1"
+127.0.0.1:6379> 
+[?2004hroot@35e6602bf8f0:/data# ^C[?2004l[?2004h[?2004l
+[?2004hroot@35e6602bf8f0:/data# exit
+[?2004lexit
+]0;jeemlei@jeemlei-HP-EliteBook-820-G2: ~/Yliopisto/FullStack/full-stack-part-12[01;32mjeemlei@jeemlei-HP-EliteBook-820-G2[00m:[01;34m~/Yliopisto/FullStack/full-stack-part-12[00m$ exit
+exit
+
+Script done on 2023-10-08 16:34:43+03:00 [COMMAND_EXIT_CODE="130"]
